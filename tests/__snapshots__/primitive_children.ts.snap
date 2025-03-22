@@ -1,0 +1,16 @@
+// Bun Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`13 became React.int 1`] = `"<span>{React.int(13)}</span>"`;
+
+exports[` 7  became React.int 1`] = `"<span>{React.int( 7 )}</span>"`;
+
+exports[`4.2 became React.float 1`] = `"<span>{React.float(4.2)}</span>"`;
+
+exports[`33.7 became React.float 1`] = `"<span>{React.float( 33.7 )}</span>"`;
+
+exports[`single space does not become React.string 1`] = `"<span> </span>"`;
+
+exports[`newline does not become React.string 1`] = `
+"<span>
+</span>"
+`;

@@ -1,0 +1,28 @@
+// Bun Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`type became type_ 1`] = `"<input type_="text" />"`;
+
+exports[`single quotes become double 1`] = `"<input type_="text" />"`;
+
+exports[`punning becomes prop=true 1`] = `"<input disabled=true />"`;
+
+exports[`open becomes open_ 1`] = `"<dialog open_=true />"`;
+
+exports[`as becomes as 1`] = `"<dialog as_="foo" />"`;
+
+exports[`aria-details becomes ariaDetails 1`] = `"<dialog ariaDetails="foo" />"`;
+
+exports[`aria-grabbed becomes ariaGrabbed 1`] = `"<dialog ariaGrapped=true />"`;
+
+exports[`data-testid becomes dataTestid 1`] = `"<dialog dataTestId="foo" />"`;
+
+exports[`dark prop punning 1`] = `
+"<dark-mode-toggle
+    id="dark-mode-toggle-1"
+    legend="Theme Switcher"
+    appearance="switch"
+    dark=true      
+    light="Light"
+    remember="Remember this"
+  ></dark-mode-toggle>"
+`;

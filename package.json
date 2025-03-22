@@ -1,0 +1,31 @@
+{
+  "name": "vanilla-jsx-to-rescript-jsx",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@shikijs/monaco": "^3.2.1",
+    "@types/bun": "latest",
+    "copy-to-clipboard": "^3.3.3",
+    "monaco-editor-core": "^0.52.2",
+    "prettier": "^3.5.3",
+    "shiki": "^3.2.1",
+    "vite": "^6.2.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@oxc-parser/binding-wasm32-wasi": "^0.61.0",
+    "magic-string": "^0.30.17",
+    "oxc-parser": "^0.61.0",
+    "oxc-walker": "^0.2.3"
+  },
+  "scripts": {
+    "test": "bun test ./tests/*.ts",
+    "fmt": " prettier --write ./index.ts ./tests/*.ts ./tool",
+    "tool": "bun --cwd tool --bun vite",
+    "tool:build": "bun --cwd tool --bun vite build",
+    "tool:preview": "bun --cwd tool --bun vite preview"
+  }
+}
