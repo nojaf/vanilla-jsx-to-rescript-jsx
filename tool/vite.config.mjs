@@ -1,7 +1,6 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/vanilla-jsx-to-rescript-jsx/",
   build: {
     target: "es2022", // napi-rs wasi-browser.js output relies on top-level await
   },
