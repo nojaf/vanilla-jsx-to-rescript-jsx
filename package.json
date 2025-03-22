@@ -26,6 +26,7 @@
     "fmt": " prettier --write ./index.ts ./tests/*.ts ./tool",
     "tool": "bun --cwd tool --bun vite",
     "tool:build": "bun --cwd tool --bun vite build",
-    "tool:preview": "bun --cwd tool --bun vite preview"
+    "tool:preview": "bun --cwd tool --bun vite preview",
+    "deploy": "bun run tool:build && firebase deploy --only hosting"
   }
 }
