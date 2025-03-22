@@ -3,6 +3,8 @@ name: CI
 on:
   pull_request:
     branches: ["main"]
+  push:
+    branches: ["main"]
 
 jobs:
   build:
@@ -18,3 +20,6 @@ jobs:
 
       - name: Run tests
         run: bun run test
+
+      - name: Build tool
+        run: bun run tool:build
