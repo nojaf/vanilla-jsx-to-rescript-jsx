@@ -66,7 +66,7 @@ I am:
 - [ ] Hoping someone else will fix this for me. Although, I accept that might not happen.
 `;
     const url = encodeURI(
-      `https://github.com/nojaf/telplin/issues/new?title=${title}&body=${body}`,
+      `https://github.com/nojaf/vanilla-jsx-to-rescript-jsx/issues/new?title=${title}&body=${body}`,
     );
 
     openIssueNode.setAttribute("href", url);

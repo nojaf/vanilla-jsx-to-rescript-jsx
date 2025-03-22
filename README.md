@@ -1,6 +1,6 @@
 # Vanilla JSX to ReScript JSX
 
-See [https://vanilla-jsx-to-rescript-jsx.web.app](online tool)!
+See [online tool](https://vanilla-jsx-to-rescript-jsx.web.app)!
 
 ## Contributing
 
