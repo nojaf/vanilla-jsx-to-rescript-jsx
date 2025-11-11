@@ -25,6 +25,7 @@
   "scripts": {
     "test": "bun test ./tests/*.ts",
     "fmt": " prettier --write ./index.ts ./tests/*.ts ./tool",
+    "check": "tsc --noEmit",
     "tool": "bun --cwd tool --bun vite",
     "tool:build": "bun --cwd tool --bun vite build",
     "tool:preview": "bun --cwd tool --bun vite preview",
