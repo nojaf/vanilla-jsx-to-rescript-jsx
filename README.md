@@ -36,6 +36,7 @@ This thing is deployed to Firebase.
 
 ```shell
 bun run tool:build
+# firebase login
 firebase deploy --only hosting
 ```
 
