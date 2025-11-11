@@ -9,6 +9,7 @@
     "copy-to-clipboard": "^3.3.3",
     "monaco-editor-core": "^0.52.2",
     "prettier": "^3.5.3",
+    "rescript": "^12.0.0-rc.3",
     "shiki": "^3.2.1",
     "vite": "^6.2.2"
   },
@@ -16,10 +17,10 @@
     "typescript": "^5"
   },
   "dependencies": {
-    "@oxc-parser/binding-wasm32-wasi": "https://registry.npmjs.org/@oxc-parser/binding-wasm32-wasi/-/binding-wasm32-wasi-0.61.0.tgz",
-    "magic-string": "^0.30.17",
-    "oxc-parser": "^0.61.0",
-    "oxc-walker": "^0.2.3"
+    "@oxc-parser/binding-wasm32-wasi": "https://registry.npmjs.org/@oxc-parser/binding-wasm32-wasi/-/binding-wasm32-wasi-0.97.0.tgz",
+    "magic-string": "^0.30.21",
+    "oxc-parser": "^0.97.0",
+    "oxc-walker": "^0.5.2"
   },
   "scripts": {
     "test": "bun test ./tests/*.ts",
@@ -27,6 +28,7 @@
     "tool": "bun --cwd tool --bun vite",
     "tool:build": "bun --cwd tool --bun vite build",
     "tool:preview": "bun --cwd tool --bun vite preview",
-    "deploy": "bun run tool:build && firebase deploy --only hosting"
+    "deploy": "bun run tool:build && firebase deploy --only hosting",
+    "dump-ast": "bun run dump-ast.ts"
   }
 }
