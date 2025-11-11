@@ -26,3 +26,5 @@ exports[`dark prop punning 1`] = `
     remember="Remember this"
   ></dark-mode-toggle>"
 `;
+
+exports[`svg int width and height become strings 1`] = `"<svg width="100" height="100" />"`;

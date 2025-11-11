@@ -45,3 +45,7 @@ test("dark prop punning", () => {
   ></dark-mode-toggle>`),
   ).toMatchSnapshot();
 });
+
+test("svg int width and height become strings", () => {
+  expect(transfrom('<svg width={100} height={100} />')).toMatchSnapshot();
+})
